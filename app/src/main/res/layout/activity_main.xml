@@ -4,7 +4,7 @@
     
     <data>
         <variable
-            name="myName"
+            name="activityXMLDataVal"
             type="com.karthikvellur.aboutme.MyName" />
     </data>
 
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
-            android:text="@={myName.name}"
+            android:text="@={activityXMLDataVal.name}"
             android:textAlignment="center" />
 
         <EditText
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:visibility="gone"
-            android:text="@={myName.nickname}"
+            android:text="@={activityXMLDataVal.nickname}"
             />
 
         <ImageView

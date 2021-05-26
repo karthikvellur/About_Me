@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     // Binding Object
     private lateinit var binding: ActivityMainBinding
 
+    // Instance of data class
     private val myNameObj: MyName = MyName("Karthik Vellur")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         // Replacement of setContentView via Binding
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.myName = myNameObj
+        binding.activityXMLDataVal = myNameObj
 
         // Set the button onClick listener
 //        findViewById<Button>(R.id.done_button).setOnClickListener {
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         // binding.apply is used to group the statements, instead of writing binding for every statement
         binding.apply {
 //            nicknameText.text = binding.nicknameEdit.text
-            myName?.nickname = nicknameEdit.text.toString()
+            activityXMLDataVal?.nickname = nicknameEdit.text.toString()
             invalidateAll() // Refreshes the UI with new data
             nicknameEdit.visibility = View.GONE
             doneButton.visibility = View.GONE
