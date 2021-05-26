@@ -24,4 +24,6 @@
         development
         Test Automation Specialist - Web-services Automation and Selenium UI Automation
     </string>
+    <string name="what_is_your_nickname">What is your nickname</string>
+    <string name="scroll_star">Star within scroll view</string>
 </resources>

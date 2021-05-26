@@ -16,6 +16,16 @@
         android:text="@string/name"
         android:textAlignment="center" />
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textMultiLine|textPersonName"
+        android:textAlignment="center" />
+
     <ImageView
         android:id="@+id/star_image"
         android:layout_width="match_parent"
@@ -38,6 +48,8 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:contentDescription="@string/scroll_star"
                 app:srcCompat="@android:drawable/star_big_on" />
 
             <TextView
